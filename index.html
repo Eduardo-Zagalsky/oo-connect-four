@@ -1,15 +1,52 @@
 <!doctype html>
+
 <head>
   <title>Connect 4</title>
   <link href="connect4.css" rel="stylesheet">
 </head>
+
 <body>
+  <form>
+    Player 1: <select>
+      <option id="red">Red</option>
+      <option id="blue">Blue</option>
+      <option id="yellow">Yellow</option>
+      <option id="green">Green</option>
+      <option id="black">Black</option>
+      <option id="teal">Teal</option>
+      <option id="raspberry">Raspberry</option>
+      <option id="indigo">Indigo</option>
+      <option id="cerulean">Cerulean</option>
+      <option id="mint">Mint</option>
+      <option id="lime">Lime</option>
+      <option id="peach">Peach</option>
+      <option id="sage">Sage</option>
+      <option id="corn">Corn</option>
+    </select>
+    Player 2: <select>
+      <option id="red">Red</option>
+      <option id="blue">Blue</option>
+      <option id="yellow">Yellow</option>
+      <option id="green">Green</option>
+      <option id="black">Black</option>
+      <option id="teal">Teal</option>
+      <option id="raspberry">Raspberry</option>
+      <option id="indigo">Indigo</option>
+      <option id="cerulean">Cerulean</option>
+      <option id="mint">Mint</option>
+      <option id="lime">Lime</option>
+      <option id="peach">Peach</option>
+      <option id="sage">Sage</option>
+      <option id="corn">Corn</option>
+    </select>
+    <input type="submit" id="game-start" value="Start Game!">
+  </form>
+  <div id="game">
+    <table id="board"></table>
+  </div>
 
-<div id="game">
-  <table id="board"></table>
-</div>
-
-<script src="connect4.js"></script>
+  <script src="connect4.js"></script>
 
 </body>
+
 </html>
