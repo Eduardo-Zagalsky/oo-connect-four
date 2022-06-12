@@ -15,12 +15,61 @@
   border-radius: 50%;
 }
 
-.piece.p1 {
+#teal {
+  background-color: rgb(8, 232, 222);
+}
+
+#indigo {
+  background-color: rgb(108, 26, 240);
+}
+
+#raspberry {
+  background-color: rgb(240, 26, 112);
+}
+
+#cerulean {
+  background-color: rgb(82, 151, 247);
+}
+
+#mint {
+  background-color: rgb(66, 252, 153);
+}
+
+#lime {
+  background-color: rgb(194, 237, 128);
+}
+
+#peach {
+  background-color: rgb(250, 170, 112);
+}
+
+#sage {
+  background-color: rgb(143, 179, 165);
+}
+
+#corn {
+  background-color: rgb(251, 236, 93);
+}
+
+#green {
+  background-color: rgb(50, 168, 82);
+}
+
+#red {
   background-color: red;
 }
 
-.piece.p2 {
+#blue {
   background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#black {
+  background-color: black;
+  color: white;
 }
 
 /* column-top is table row of clickable areas for each column */
