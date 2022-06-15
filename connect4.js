@@ -89,6 +89,20 @@ class Game {
     alert(msg);
     const top = document.getElementById("column-top");
     top.removeEventListener("click", this.handleGameClick)
+    setTimeout(function () {
+      board.remove();
+      const buttonDiv = document.createElement("div")
+      const restartButton = document.createElement("button");
+      const body = document.getElementById("body");
+      buttonDiv.setAttribute("id", "restart-div");
+      restartButton.setAttribute("id", "restart-button");
+      restartButton.innerText = "Restart";
+      restartButton.addEventListener("click", function () {
+        location.reload();
+      });
+      buttonDiv.append(restartButton);
+      body.append(buttonDiv);
+    }, 2500)
   }
 
   /** handleClick: handle click of column top to play piece */
@@ -169,4 +183,6 @@ document.querySelector("#game-start").addEventListener("click", (event) => {
   let select2 = document.getElementById("player-2");
   let p2 = new Player(select2.options[select2.selectedIndex].value)
   new Game(p1, p2);
+  let div = document.getElementById("start-form");
+  div.remove();
 });
